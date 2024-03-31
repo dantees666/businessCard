@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA3A2DEE2BB6E3A100351B39 /* FeaturedJobCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */; };
+		AA3A2DF02BB7DD0400351B39 /* FeaturedJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DEF2BB7DD0400351B39 /* FeaturedJob.swift */; };
+		AA3A2DF22BB7DF0C00351B39 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */; };
+		AA3A2DF42BB7E7FC00351B39 /* RecommendedJobCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */; };
+		AA3A2DF62BB7EAAC00351B39 /* RecomendedJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */; };
+		AAFE02F72BB4329900F447C7 /* businessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F62BB4329900F447C7 /* businessCardApp.swift */; };
+		AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F82BB4329900F447C7 /* ContentView.swift */; };
+		AAFE02FB2BB4329C00F447C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */; };
+		AAFE02FE2BB4329C00F447C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE02FD2BB4329C00F447C7 /* Preview Assets.xcassets */; };
+		AAFE03072BB453F600F447C7 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE03062BB453F600F447C7 /* Tab.swift */; };
+		AAFE03092BB455EE00F447C7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE03082BB455EE00F447C7 /* Home.swift */; };
+		AAFE030B2BB57D6900F447C7 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE030A2BB57D6900F447C7 /* TabShape.swift */; };
+		AAFE030D2BB57FD600F447C7 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE030C2BB57FD600F447C7 /* TabPosition.swift */; };
+		AAFE03102BB596F800F447C7 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE030F2BB596F800F447C7 /* Welcome.swift */; };
+		AAFE03242BB59A1200F447C7 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03122BB59A1200F447C7 /* Montserrat-ExtraBoldItalic.ttf */; };
+		AAFE03252BB59A1200F447C7 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03132BB59A1200F447C7 /* Montserrat-ExtraBold.ttf */; };
+		AAFE03262BB59A1200F447C7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03142BB59A1200F447C7 /* Montserrat-Bold.ttf */; };
+		AAFE03272BB59A1200F447C7 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03152BB59A1200F447C7 /* Montserrat-Thin.ttf */; };
+		AAFE03282BB59A1200F447C7 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03162BB59A1200F447C7 /* Montserrat-Italic.ttf */; };
+		AAFE03292BB59A1200F447C7 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03172BB59A1200F447C7 /* Montserrat-Medium.ttf */; };
+		AAFE032A2BB59A1200F447C7 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03182BB59A1200F447C7 /* Montserrat-MediumItalic.ttf */; };
+		AAFE032B2BB59A1200F447C7 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03192BB59A1200F447C7 /* Montserrat-SemiBoldItalic.ttf */; };
+		AAFE032C2BB59A1200F447C7 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031A2BB59A1200F447C7 /* Montserrat-LightItalic.ttf */; };
+		AAFE032D2BB59A1200F447C7 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031B2BB59A1200F447C7 /* Montserrat-Light.ttf */; };
+		AAFE032E2BB59A1200F447C7 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031C2BB59A1200F447C7 /* Montserrat-ExtraLightItalic.ttf */; };
+		AAFE032F2BB59A1200F447C7 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031D2BB59A1200F447C7 /* Montserrat-BoldItalic.ttf */; };
+		AAFE03302BB59A1200F447C7 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031E2BB59A1200F447C7 /* Montserrat-SemiBold.ttf */; };
+		AAFE03312BB59A1200F447C7 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE031F2BB59A1200F447C7 /* Montserrat-ThinItalic.ttf */; };
+		AAFE03322BB59A1200F447C7 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03202BB59A1200F447C7 /* Montserrat-Black.ttf */; };
+		AAFE03332BB59A1200F447C7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03212BB59A1200F447C7 /* Montserrat-Regular.ttf */; };
+		AAFE03342BB59A1200F447C7 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03222BB59A1200F447C7 /* Montserrat-ExtraLight.ttf */; };
+		AAFE03352BB59A1200F447C7 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFE03232BB59A1200F447C7 /* Montserrat-BlackItalic.ttf */; };
+		AAFE03382BB5A68600F447C7 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE03372BB5A68600F447C7 /* Search.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedJobCard.swift; sourceTree = "<group>"; };
+		AA3A2DEF2BB7DD0400351B39 /* FeaturedJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedJob.swift; sourceTree = "<group>"; };
+		AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
+		AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedJobCard.swift; sourceTree = "<group>"; };
+		AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedJob.swift; sourceTree = "<group>"; };
+		AAFE02F32BB4329900F447C7 /* businessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = businessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFE02F62BB4329900F447C7 /* businessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessCardApp.swift; sourceTree = "<group>"; };
+		AAFE02F82BB4329900F447C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAFE02FD2BB4329C00F447C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAFE03062BB453F600F447C7 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		AAFE03082BB455EE00F447C7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AAFE030A2BB57D6900F447C7 /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		AAFE030C2BB57FD600F447C7 /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		AAFE030F2BB596F800F447C7 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		AAFE03122BB59A1200F447C7 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		AAFE03132BB59A1200F447C7 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AAFE03142BB59A1200F447C7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		AAFE03152BB59A1200F447C7 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		AAFE03162BB59A1200F447C7 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		AAFE03172BB59A1200F447C7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		AAFE03182BB59A1200F447C7 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AAFE03192BB59A1200F447C7 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		AAFE031A2BB59A1200F447C7 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		AAFE031B2BB59A1200F447C7 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		AAFE031C2BB59A1200F447C7 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AAFE031D2BB59A1200F447C7 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AAFE031E2BB59A1200F447C7 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		AAFE031F2BB59A1200F447C7 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AAFE03202BB59A1200F447C7 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		AAFE03212BB59A1200F447C7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		AAFE03222BB59A1200F447C7 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AAFE03232BB59A1200F447C7 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AAFE03362BB59AD700F447C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AAFE03372BB5A68600F447C7 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAFE02F02BB4329900F447C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3A2DEA2BB6E31700351B39 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE03082BB455EE00F447C7 /* Home.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		AA3A2DEB2BB6E32A00351B39 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE030A2BB57D6900F447C7 /* TabShape.swift */,
+				AAFE030F2BB596F800F447C7 /* Welcome.swift */,
+				AAFE03372BB5A68600F447C7 /* Search.swift */,
+				AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */,
+				AA3A2DEF2BB7DD0400351B39 /* FeaturedJob.swift */,
+				AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */,
+				AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AAFE02EA2BB4329900F447C7 = {
+			isa = PBXGroup;
+			children = (
+				AAFE02F52BB4329900F447C7 /* businessCard */,
+				AAFE02F42BB4329900F447C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAFE02F42BB4329900F447C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE02F32BB4329900F447C7 /* businessCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAFE02F52BB4329900F447C7 /* businessCard */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE03362BB59AD700F447C7 /* Info.plist */,
+				AAFE03112BB599CC00F447C7 /* Font */,
+				AAFE030E2BB57FF000F447C7 /* Extensions */,
+				AAFE03052BB453E200F447C7 /* Model */,
+				AAFE03042BB453CE00F447C7 /* View */,
+				AAFE02F62BB4329900F447C7 /* businessCardApp.swift */,
+				AAFE02F82BB4329900F447C7 /* ContentView.swift */,
+				AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */,
+				AAFE02FC2BB4329C00F447C7 /* Preview Content */,
+			);
+			path = businessCard;
+			sourceTree = "<group>";
+		};
+		AAFE02FC2BB4329C00F447C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE02FD2BB4329C00F447C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAFE03042BB453CE00F447C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA3A2DEB2BB6E32A00351B39 /* CustomViews */,
+				AA3A2DEA2BB6E31700351B39 /* Tabs */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAFE03052BB453E200F447C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE03062BB453F600F447C7 /* Tab.swift */,
+				AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAFE030E2BB57FF000F447C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE030C2BB57FD600F447C7 /* TabPosition.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAFE03112BB599CC00F447C7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE03202BB59A1200F447C7 /* Montserrat-Black.ttf */,
+				AAFE03232BB59A1200F447C7 /* Montserrat-BlackItalic.ttf */,
+				AAFE03142BB59A1200F447C7 /* Montserrat-Bold.ttf */,
+				AAFE031D2BB59A1200F447C7 /* Montserrat-BoldItalic.ttf */,
+				AAFE03132BB59A1200F447C7 /* Montserrat-ExtraBold.ttf */,
+				AAFE03122BB59A1200F447C7 /* Montserrat-ExtraBoldItalic.ttf */,
+				AAFE03222BB59A1200F447C7 /* Montserrat-ExtraLight.ttf */,
+				AAFE031C2BB59A1200F447C7 /* Montserrat-ExtraLightItalic.ttf */,
+				AAFE03162BB59A1200F447C7 /* Montserrat-Italic.ttf */,
+				AAFE031B2BB59A1200F447C7 /* Montserrat-Light.ttf */,
+				AAFE031A2BB59A1200F447C7 /* Montserrat-LightItalic.ttf */,
+				AAFE03172BB59A1200F447C7 /* Montserrat-Medium.ttf */,
+				AAFE03182BB59A1200F447C7 /* Montserrat-MediumItalic.ttf */,
+				AAFE03212BB59A1200F447C7 /* Montserrat-Regular.ttf */,
+				AAFE031E2BB59A1200F447C7 /* Montserrat-SemiBold.ttf */,
+				AAFE03192BB59A1200F447C7 /* Montserrat-SemiBoldItalic.ttf */,
+				AAFE03152BB59A1200F447C7 /* Montserrat-Thin.ttf */,
+				AAFE031F2BB59A1200F447C7 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAFE02F22BB4329900F447C7 /* businessCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFE03012BB4329C00F447C7 /* Build configuration list for PBXNativeTarget "businessCard" */;
+			buildPhases = (
+				AAFE02EF2BB4329900F447C7 /* Sources */,
+				AAFE02F02BB4329900F447C7 /* Frameworks */,
+				AAFE02F12BB4329900F447C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = businessCard;
+			productName = businessCard;
+			productReference = AAFE02F32BB4329900F447C7 /* businessCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAFE02EB2BB4329900F447C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					AAFE02F22BB4329900F447C7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = AAFE02EE2BB4329900F447C7 /* Build configuration list for PBXProject "businessCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAFE02EA2BB4329900F447C7;
+			productRefGroup = AAFE02F42BB4329900F447C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAFE02F22BB4329900F447C7 /* businessCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAFE02F12BB4329900F447C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFE03342BB59A1200F447C7 /* Montserrat-ExtraLight.ttf in Resources */,
+				AAFE03332BB59A1200F447C7 /* Montserrat-Regular.ttf in Resources */,
+				AAFE032D2BB59A1200F447C7 /* Montserrat-Light.ttf in Resources */,
+				AAFE03322BB59A1200F447C7 /* Montserrat-Black.ttf in Resources */,
+				AAFE032C2BB59A1200F447C7 /* Montserrat-LightItalic.ttf in Resources */,
+				AAFE032E2BB59A1200F447C7 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				AAFE03262BB59A1200F447C7 /* Montserrat-Bold.ttf in Resources */,
+				AAFE03242BB59A1200F447C7 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				AAFE03252BB59A1200F447C7 /* Montserrat-ExtraBold.ttf in Resources */,
+				AAFE02FE2BB4329C00F447C7 /* Preview Assets.xcassets in Resources */,
+				AAFE032A2BB59A1200F447C7 /* Montserrat-MediumItalic.ttf in Resources */,
+				AAFE032F2BB59A1200F447C7 /* Montserrat-BoldItalic.ttf in Resources */,
+				AAFE03302BB59A1200F447C7 /* Montserrat-SemiBold.ttf in Resources */,
+				AAFE03352BB59A1200F447C7 /* Montserrat-BlackItalic.ttf in Resources */,
+				AAFE03312BB59A1200F447C7 /* Montserrat-ThinItalic.ttf in Resources */,
+				AAFE03272BB59A1200F447C7 /* Montserrat-Thin.ttf in Resources */,
+				AAFE02FB2BB4329C00F447C7 /* Assets.xcassets in Resources */,
+				AAFE03292BB59A1200F447C7 /* Montserrat-Medium.ttf in Resources */,
+				AAFE032B2BB59A1200F447C7 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				AAFE03282BB59A1200F447C7 /* Montserrat-Italic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAFE02EF2BB4329900F447C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFE03072BB453F600F447C7 /* Tab.swift in Sources */,
+				AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */,
+				AAFE030D2BB57FD600F447C7 /* TabPosition.swift in Sources */,
+				AAFE03092BB455EE00F447C7 /* Home.swift in Sources */,
+				AAFE02F72BB4329900F447C7 /* businessCardApp.swift in Sources */,
+				AAFE03382BB5A68600F447C7 /* Search.swift in Sources */,
+				AAFE030B2BB57D6900F447C7 /* TabShape.swift in Sources */,
+				AA3A2DF42BB7E7FC00351B39 /* RecommendedJobCard.swift in Sources */,
+				AA3A2DF02BB7DD0400351B39 /* FeaturedJob.swift in Sources */,
+				AA3A2DEE2BB6E3A100351B39 /* FeaturedJobCard.swift in Sources */,
+				AA3A2DF62BB7EAAC00351B39 /* RecomendedJob.swift in Sources */,
+				AAFE03102BB596F800F447C7 /* Welcome.swift in Sources */,
+				AA3A2DF22BB7DF0C00351B39 /* Vacancy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAFE02FF2BB4329C00F447C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAFE03002BB4329C00F447C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAFE03022BB4329C00F447C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"businessCard/Preview Content\"";
+				DEVELOPMENT_TEAM = X2ZM945K9W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = businessCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qwezxc.businessCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAFE03032BB4329C00F447C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"businessCard/Preview Content\"";
+				DEVELOPMENT_TEAM = X2ZM945K9W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = businessCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qwezxc.businessCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAFE02EE2BB4329900F447C7 /* Build configuration list for PBXProject "businessCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFE02FF2BB4329C00F447C7 /* Debug */,
+				AAFE03002BB4329C00F447C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFE03012BB4329C00F447C7 /* Build configuration list for PBXNativeTarget "businessCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFE03022BB4329C00F447C7 /* Debug */,
+				AAFE03032BB4329C00F447C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAFE02EB2BB4329900F447C7 /* Project object */;
+}
