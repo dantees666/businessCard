@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecommendedJob: View {
+    @State private var isPresented = false
+    
     var vacancies: [Vacancy]
     var body: some View {
         VStack {
@@ -32,7 +34,13 @@ struct RecommendedJob: View {
                     Spacer()
                     
                     ForEach(vacancies, id: \.self) { vacancy in
-                        RecommendedJobCard(vacancy: vacancy)
+                        Button(action: {
+                            isPresented.toggle()
+                        }) {
+                            RecommendedJobCard(vacancy: vacancy)
+                                .fullScreenCover(isPresented: $isPresented, content: { VacancyCard.init(vacancy: vacancy)})
+                        }
+                        
                     }
                     
                     Spacer()

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FeaturedJob: View {
+    @State private var isPresented = false
+    
     var vacancies: [Vacancy]
     
     var body: some View {
@@ -33,7 +35,14 @@ struct FeaturedJob: View {
                     Spacer()
                     
                     ForEach(vacancies, id: \.self) { vacancy in
-                        FeaturedJobCard(vacancy: vacancy)
+                        Button(action: {
+                            isPresented.toggle()
+                        }){
+                            FeaturedJobCard(vacancy: vacancy)
+                        }
+                        .fullScreenCover(isPresented: $isPresented, content: {
+                            VacancyCard.init(vacancy: vacancy)
+                        })
                     }
                     
                     Spacer()
