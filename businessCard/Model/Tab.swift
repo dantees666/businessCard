@@ -23,7 +23,7 @@ enum Tab: String, CaseIterable {
         case .bookmarks:
             "bookmark.fill"
         case .menu:
-            "square.grid.2x2"
+            "square.grid.2x2.fill"
         }
     }
     
