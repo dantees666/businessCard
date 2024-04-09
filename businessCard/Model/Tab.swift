@@ -12,7 +12,7 @@ enum Tab: String, CaseIterable {
     case home = "Home"
     case messages = "Messages"
     case bookmarks = "Bookmarks"
-    case menu = "Menu"
+    case menu = "Vacanies"
     
     var systemImage: String {
         switch self {

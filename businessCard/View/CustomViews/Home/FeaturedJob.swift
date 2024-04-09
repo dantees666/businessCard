@@ -1,5 +1,5 @@
 //
-//  RecomendedJob.swift
+//  FeaturedJob.swift
 //  businessCard
 //
 //  Created by Андрей Буянов on 30.03.2024.
@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct RecommendedJob: View {
+struct FeaturedJob: View {
     @State private var isPresented = false
     
     var vacancies: [Vacancy]
+    
     var body: some View {
         VStack {
             HStack {
-                Text("Recommended Jobs")
+                Text("Featured Jobs")
                     .font(Font.custom("Montserrat-Bold", size: 16))
                 
                 Spacer()
@@ -36,11 +37,12 @@ struct RecommendedJob: View {
                     ForEach(vacancies, id: \.self) { vacancy in
                         Button(action: {
                             isPresented.toggle()
-                        }) {
-                            RecommendedJobCard(vacancy: vacancy)
-                                .fullScreenCover(isPresented: $isPresented, content: { VacancyCard.init(vacancy: vacancy)})
+                        }){
+                            FeaturedJobCard(vacancy: vacancy)
                         }
-                        
+                        .fullScreenCover(isPresented: $isPresented, content: {
+                            VacancyDetail.init(vacancy: vacancy)
+                        })
                     }
                     
                     Spacer()
@@ -50,7 +52,7 @@ struct RecommendedJob: View {
     }
 }
 
-struct RecomendedJob_Previes: PreviewProvider {
+struct FeaturedJob_Previews: PreviewProvider {
     static var previews: some View {
         let previewVacancy = Vacancy(
             logo: "Drible",
@@ -60,6 +62,7 @@ struct RecomendedJob_Previes: PreviewProvider {
             salary: "$80,000/y",
             region: "New-York, NY"
         )
-        RecommendedJob(vacancies: [previewVacancy, previewVacancy, previewVacancy])
+        
+        FeaturedJob(vacancies: [previewVacancy, previewVacancy, previewVacancy])
     }
 }

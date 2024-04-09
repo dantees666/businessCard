@@ -12,8 +12,10 @@
 		AA3A2DF22BB7DF0C00351B39 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */; };
 		AA3A2DF42BB7E7FC00351B39 /* RecommendedJobCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */; };
 		AA3A2DF62BB7EAAC00351B39 /* RecomendedJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */; };
-		AA3A2DF82BB96F5400351B39 /* VacancyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF72BB96F5400351B39 /* VacancyCard.swift */; };
+		AA3A2DF82BB96F5400351B39 /* VacancyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF72BB96F5400351B39 /* VacancyDetail.swift */; };
 		AA3A2DFA2BB976C300351B39 /* VacancyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF92BB976C300351B39 /* VacancyTab.swift */; };
+		AA3A2DFC2BC40C2A00351B39 /* Vacancies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */; };
+		AA3A2DFE2BC40D6B00351B39 /* VacanciesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */; };
 		AAFE02F72BB4329900F447C7 /* businessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F62BB4329900F447C7 /* businessCardApp.swift */; };
 		AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F82BB4329900F447C7 /* ContentView.swift */; };
 		AAFE02FB2BB4329C00F447C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */; };
@@ -50,8 +52,10 @@
 		AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
 		AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedJobCard.swift; sourceTree = "<group>"; };
 		AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedJob.swift; sourceTree = "<group>"; };
-		AA3A2DF72BB96F5400351B39 /* VacancyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCard.swift; sourceTree = "<group>"; };
+		AA3A2DF72BB96F5400351B39 /* VacancyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyDetail.swift; sourceTree = "<group>"; };
 		AA3A2DF92BB976C300351B39 /* VacancyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyTab.swift; sourceTree = "<group>"; };
+		AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancies.swift; sourceTree = "<group>"; };
+		AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesTab.swift; sourceTree = "<group>"; };
 		AAFE02F32BB4329900F447C7 /* businessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = businessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFE02F62BB4329900F447C7 /* businessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessCardApp.swift; sourceTree = "<group>"; };
 		AAFE02F82BB4329900F447C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFE03082BB455EE00F447C7 /* Home.swift */,
+				AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -106,16 +111,32 @@
 		AA3A2DEB2BB6E32A00351B39 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				AAFE030A2BB57D6900F447C7 /* TabShape.swift */,
-				AAFE030F2BB596F800F447C7 /* Welcome.swift */,
-				AAFE03372BB5A68600F447C7 /* Search.swift */,
-				AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */,
-				AA3A2DEF2BB7DD0400351B39 /* FeaturedJob.swift */,
-				AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */,
-				AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */,
-				AA3A2DF72BB96F5400351B39 /* VacancyCard.swift */,
+				AA3A2E002BC4117900351B39 /* Auxiliary */,
+				AA3A2DFF2BC4113100351B39 /* Home */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AA3A2DFF2BC4113100351B39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE030F2BB596F800F447C7 /* Welcome.swift */,
+				AAFE03372BB5A68600F447C7 /* Search.swift */,
+				AA3A2DEF2BB7DD0400351B39 /* FeaturedJob.swift */,
+				AA3A2DF52BB7EAAC00351B39 /* RecomendedJob.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA3A2E002BC4117900351B39 /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE030A2BB57D6900F447C7 /* TabShape.swift */,
+				AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */,
+				AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */,
+				AA3A2DF72BB96F5400351B39 /* VacancyDetail.swift */,
+			);
+			path = Auxiliary;
 			sourceTree = "<group>";
 		};
 		AAFE02EA2BB4329900F447C7 = {
@@ -173,6 +194,7 @@
 				AAFE03062BB453F600F447C7 /* Tab.swift */,
 				AA3A2DF12BB7DF0C00351B39 /* Vacancy.swift */,
 				AA3A2DF92BB976C300351B39 /* VacancyTab.swift */,
+				AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,12 +326,14 @@
 				AAFE03092BB455EE00F447C7 /* Home.swift in Sources */,
 				AA3A2DFA2BB976C300351B39 /* VacancyTab.swift in Sources */,
 				AAFE02F72BB4329900F447C7 /* businessCardApp.swift in Sources */,
-				AA3A2DF82BB96F5400351B39 /* VacancyCard.swift in Sources */,
+				AA3A2DF82BB96F5400351B39 /* VacancyDetail.swift in Sources */,
+				AA3A2DFC2BC40C2A00351B39 /* Vacancies.swift in Sources */,
 				AAFE03382BB5A68600F447C7 /* Search.swift in Sources */,
 				AAFE030B2BB57D6900F447C7 /* TabShape.swift in Sources */,
 				AA3A2DF42BB7E7FC00351B39 /* RecommendedJobCard.swift in Sources */,
 				AA3A2DF02BB7DD0400351B39 /* FeaturedJob.swift in Sources */,
 				AA3A2DEE2BB6E3A100351B39 /* FeaturedJobCard.swift in Sources */,
+				AA3A2DFE2BC40D6B00351B39 /* VacanciesTab.swift in Sources */,
 				AA3A2DF62BB7EAAC00351B39 /* RecomendedJob.swift in Sources */,
 				AAFE03102BB596F800F447C7 /* Welcome.swift in Sources */,
 				AA3A2DF22BB7DF0C00351B39 /* Vacancy.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VacancyCard: View {
+struct VacancyDetail: View {
     @State private var activeTab: VacancyTab = .description
     @Environment(\.dismiss) var dismiss
     var vacancy: Vacancy
@@ -176,6 +176,6 @@ struct VacancyCard_Previes: PreviewProvider {
             salary: "$80,000/y",
             region: "New-York, NY"
         )
-        VacancyCard(vacancy: previewVacancy)
+        VacancyDetail(vacancy: previewVacancy)
     }
 }
