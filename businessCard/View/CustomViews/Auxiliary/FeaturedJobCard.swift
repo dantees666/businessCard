@@ -13,7 +13,7 @@ struct FeaturedJobCard: View {
     var body: some View {
         VStack {
             HStack(spacing: 20) {
-                Image(vacancy.logo)
+                Image(vacancy.company.logo)
                     .resizable()
                     .frame(width: 30, height: 30)
                     .background() {
@@ -32,7 +32,7 @@ struct FeaturedJobCard: View {
                     }
                     
                     HStack {
-                        Text(vacancy.company)
+                        Text(vacancy.company.name)
                             .font(Font.custom("Montserrat-Regular", size: 13))
                             .foregroundStyle(.white)
                         Spacer()
@@ -96,15 +96,6 @@ struct JobTag: View {
 
 struct FeaturedJobCard_Previes: PreviewProvider {
     static var previews: some View {
-        let previewVacancy = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        
-        FeaturedJobCard(vacancy: previewVacancy)
+        FeaturedJobCard(vacancy: VacancyData.sampleVacancy)
     }
 }

@@ -52,14 +52,6 @@ struct RecommendedJob: View {
 
 struct RecomendedJob_Previes: PreviewProvider {
     static var previews: some View {
-        let previewVacancy = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        RecommendedJob(vacancies: [previewVacancy, previewVacancy, previewVacancy])
+        RecommendedJob(vacancies: [VacancyData.sampleVacancy, VacancyData.sampleVacancy, VacancyData.sampleVacancy])
     }
 }

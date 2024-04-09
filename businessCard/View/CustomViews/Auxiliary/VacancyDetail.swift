@@ -56,7 +56,7 @@ struct VacancyDetail: View {
                     Text(vacancy.vacancyName)
                         .font(Font.custom("Montserrat-Bold", size: 20))
                         .foregroundStyle(.white)
-                    Text(vacancy.company)
+                    Text(vacancy.company.name)
                         .font(Font.custom("Montserrat-Regular", size: 17))
                         .foregroundStyle(.white)
                     
@@ -168,14 +168,6 @@ struct VacancyTabBarItem: View {
 
 struct VacancyCard_Previes: PreviewProvider {
     static var previews: some View {
-        let previewVacancy = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        VacancyDetail(vacancy: previewVacancy)
+        VacancyDetail(vacancy: VacancyData.sampleVacancy)
     }
 }

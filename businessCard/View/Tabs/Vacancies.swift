@@ -87,33 +87,6 @@ struct VacanciesTabBarItem: View {
 
 struct Vacancies_Previews: PreviewProvider {
     static var previews: some View {
-        let previewVacancy = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        
-        let previewVacancy1 = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible1",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        
-        let previewVacancy2 = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible2",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        
-        Vacancies(vacancies: [previewVacancy, previewVacancy1, previewVacancy2])
+        Vacancies(vacancies: [VacancyData.vacancies[0], VacancyData.vacancies[1], VacancyData.vacancies[2]])
     }
 }

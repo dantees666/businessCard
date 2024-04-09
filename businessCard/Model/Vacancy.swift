@@ -8,20 +8,80 @@
 import SwiftUI
 
 struct Vacancy: Hashable {
-    var logo: String
     var vacancyName: String
-    var company: String
+    var company: Company
     var tags: [String]
     var salary: String
     var region: String
+}
+
+struct VacancyData {
+    static let sampleVacancy = Vacancy(vacancyName: "UX Designer",
+                                       company: CompanyData.companies[0],
+                                       tags: ["Design", "Full-Time", "Junior"],
+                                       salary: "$80,000/y",
+                                       region: "New-York, NY")
     
-    init(logo: String, vacancyName: String, company: String, tags: [String], salary: String, region: String) {
-        self.logo = logo
-        self.vacancyName = vacancyName
-        self.company = company
-        self.tags = tags
-        self.salary = salary
-        self.region = region
-    }
+    static let vacancies = [
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[0],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[1],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[2],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[3],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[4],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[5],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[6],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[7],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[8],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+        
+        Vacancy(vacancyName: "UX Designer",
+                company: CompanyData.companies[9],
+                tags: ["Design", "Full-Time", "Junior"],
+                salary: "$80,000/y",
+                region: "New-York, NY"),
+    ]
 }
 

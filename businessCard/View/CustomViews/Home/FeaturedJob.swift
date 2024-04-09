@@ -54,15 +54,6 @@ struct FeaturedJob: View {
 
 struct FeaturedJob_Previews: PreviewProvider {
     static var previews: some View {
-        let previewVacancy = Vacancy(
-            logo: "Drible",
-            vacancyName: "UX Designer",
-            company: "Drible",
-            tags: ["Design", "Full-Time", "Junior"],
-            salary: "$80,000/y",
-            region: "New-York, NY"
-        )
-        
-        FeaturedJob(vacancies: [previewVacancy, previewVacancy, previewVacancy])
+        FeaturedJob(vacancies: [VacancyData.sampleVacancy, VacancyData.sampleVacancy, VacancyData.sampleVacancy])
     }
 }

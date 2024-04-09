@@ -12,15 +12,6 @@ struct ContentView: View {
     @Namespace private var animation
     @State private var tabshapePosition: CGPoint = .zero
     
-    let previewVacancy = Vacancy(
-        logo: "Drible",
-        vacancyName: "UX Designer",
-        company: "Drible",
-        tags: ["Design", "Full-Time", "Junior"],
-        salary: "$80,000/y",
-        region: "New-York, NY"
-    )
-    
     // Hiding Tab Bar due to SwiftUI bug
     init() {
         UITabBar.appearance().isHidden = true
@@ -38,7 +29,7 @@ struct ContentView: View {
                 Text("Bookmarks")
                     .tag(Tab.bookmarks)
                     //.toolbar(.hidden,for: .tabBar)
-                Vacancies(vacancies: [previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy, previewVacancy])
+                Vacancies(vacancies: VacancyData.vacancies)
                     .tag(Tab.menu)
                     //.toolbar(.hidden,for: .tabBar)
             }
