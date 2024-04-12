@@ -10,6 +10,7 @@ import SwiftUI
 struct Vacancies: View {
     @State private var activeTab: VacanciesTab = .vacancies
     @State private var isPresented = false
+    @State private var presentedVacancy = VacancyData.sampleVacancy
     
     var vacancies: [Vacancy]
     
@@ -20,15 +21,11 @@ struct Vacancies: View {
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(vacancies, id: \.self) { vacancy in
-                                Button(action: {
-                                    isPresented.toggle()
-                                }){
-                                    VacancyCard(vacancy: vacancy)
-                                        .padding(.horizontal, 5)
-                                }
-                                .fullScreenCover(isPresented: $isPresented, content: {
-                                    VacancyDetail.init(vacancy: vacancy)
-                                })
+                                VacancyCard(isPresented: $isPresented, presentedVacancy: $presentedVacancy, vacancy: vacancy)
+                                    .padding(.horizontal, 5)
+                                    .fullScreenCover(isPresented: $isPresented, content: {
+                                        VacancyDetail.init(vacancy: presentedVacancy)
+                                    })
                             }
                         }
                         .padding()

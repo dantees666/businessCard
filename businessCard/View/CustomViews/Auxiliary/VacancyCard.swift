@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct VacancyCard: View {
+    @Binding var isPresented: Bool
+    @Binding var presentedVacancy: Vacancy
+    
     var vacancy: Vacancy
     
     var body: some View {
@@ -63,11 +66,15 @@ struct VacancyCard: View {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundStyle(Color("MBackgroundGray"))
         }
+        .onTapGesture {
+            $isPresented.wrappedValue.toggle()
+            $presentedVacancy.wrappedValue = vacancy
+        }
     }
 }
     
 struct VacancyCard_Preview: PreviewProvider {
     static var previews: some View {
-        VacancyCard(vacancy: VacancyData.sampleVacancy)
+        VacancyCard(isPresented: .constant(false), presentedVacancy: .constant(VacancyData.sampleVacancy), vacancy: VacancyData.sampleVacancy)
     }
 }

@@ -30,7 +30,7 @@ struct VacancyDetail: View {
                     
                     Spacer()
                     
-                    Image("Drible")
+                    Image(vacancy.company.logo)
                         .resizable()
                         .frame(width: 40, height: 40)
                         .background() {
