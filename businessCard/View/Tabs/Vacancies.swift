@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Vacancies: View {
     @State private var activeTab: VacanciesTab = .vacancies
+    @State private var isPresented = false
+    
     var vacancies: [Vacancy]
     
     var body: some View {
@@ -16,9 +18,17 @@ struct Vacancies: View {
             TabView(selection: $activeTab) {
                 VStack {
                     ScrollView {
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+                        LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(vacancies, id: \.self) { vacancy in
-                                RecommendedJobCard(vacancy: vacancy)
+                                Button(action: {
+                                    isPresented.toggle()
+                                }){
+                                    VacancyCard(vacancy: vacancy)
+                                        .padding(.horizontal, 5)
+                                }
+                                .fullScreenCover(isPresented: $isPresented, content: {
+                                    VacancyDetail.init(vacancy: vacancy)
+                                })
                             }
                         }
                         .padding()

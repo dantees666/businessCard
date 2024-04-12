@@ -17,6 +17,8 @@
 		AA3A2DFC2BC40C2A00351B39 /* Vacancies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */; };
 		AA3A2DFE2BC40D6B00351B39 /* VacanciesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */; };
 		AAD6EA382BC576D700B70B31 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6EA372BC576D700B70B31 /* Company.swift */; };
+		AAD6EA3A2BC9448200B70B31 /* VacancyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6EA392BC9448200B70B31 /* VacancyCard.swift */; };
+		AAF72C942BC94CBD00704D7A /* CompanyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF72C932BC94CBD00704D7A /* CompanyCard.swift */; };
 		AAFE02F72BB4329900F447C7 /* businessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F62BB4329900F447C7 /* businessCardApp.swift */; };
 		AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFE02F82BB4329900F447C7 /* ContentView.swift */; };
 		AAFE02FB2BB4329C00F447C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancies.swift; sourceTree = "<group>"; };
 		AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesTab.swift; sourceTree = "<group>"; };
 		AAD6EA372BC576D700B70B31 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		AAD6EA392BC9448200B70B31 /* VacancyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCard.swift; sourceTree = "<group>"; };
+		AAF72C932BC94CBD00704D7A /* CompanyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCard.swift; sourceTree = "<group>"; };
 		AAFE02F32BB4329900F447C7 /* businessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = businessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFE02F62BB4329900F447C7 /* businessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = businessCardApp.swift; sourceTree = "<group>"; };
 		AAFE02F82BB4329900F447C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				AA3A2DED2BB6E3A100351B39 /* FeaturedJobCard.swift */,
 				AA3A2DF32BB7E7FC00351B39 /* RecommendedJobCard.swift */,
 				AA3A2DF72BB96F5400351B39 /* VacancyDetail.swift */,
+				AAD6EA392BC9448200B70B31 /* VacancyCard.swift */,
+				AAF72C932BC94CBD00704D7A /* CompanyCard.swift */,
 			);
 			path = Auxiliary;
 			sourceTree = "<group>";
@@ -323,6 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD6EA3A2BC9448200B70B31 /* VacancyCard.swift in Sources */,
+				AAF72C942BC94CBD00704D7A /* CompanyCard.swift in Sources */,
 				AAFE03072BB453F600F447C7 /* Tab.swift in Sources */,
 				AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */,
 				AAFE030D2BB57FD600F447C7 /* TabPosition.swift in Sources */,
