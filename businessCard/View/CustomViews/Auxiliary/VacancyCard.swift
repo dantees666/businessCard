@@ -67,8 +67,8 @@ struct VacancyCard: View {
                 .foregroundStyle(Color("MBackgroundGray"))
         }
         .onTapGesture {
-            $isPresented.wrappedValue.toggle()
             $presentedVacancy.wrappedValue = vacancy
+            $isPresented.wrappedValue.toggle()
         }
     }
 }

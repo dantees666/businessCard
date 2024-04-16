@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Observation
 
 struct Search: View {
-    @State private var searchTerm = ""
+    @Bindable var viewModel = SearchViewModel()
+    
     var body: some View {
         HStack(spacing: 10) {
             HStack {

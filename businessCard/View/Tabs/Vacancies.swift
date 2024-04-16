@@ -6,25 +6,24 @@
 //
 
 import SwiftUI
+import Observation
 
 struct Vacancies: View {
-    @State private var activeTab: VacanciesTab = .vacancies
-    @State private var isPresented = false
-    @State private var presentedVacancy = VacancyData.sampleVacancy
+    @Bindable private var viewModel = VacanciesViewModel()
     
     var vacancies: [Vacancy]
     
     var body: some View {
         ZStack(alignment: .top) {
-            TabView(selection: $activeTab) {
+            TabView(selection: $viewModel.activeTab) {
                 VStack {
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(vacancies, id: \.self) { vacancy in
-                                VacancyCard(isPresented: $isPresented, presentedVacancy: $presentedVacancy, vacancy: vacancy)
+                                VacancyCard(isPresented: $viewModel.isPresented, presentedVacancy: $viewModel.presentedVacancy, vacancy: vacancy)
                                     .padding(.horizontal, 5)
-                                    .fullScreenCover(isPresented: $isPresented, content: {
-                                        VacancyDetail.init(vacancy: presentedVacancy)
+                                    .fullScreenCover(isPresented: $viewModel.isPresented, content: {
+                                        VacancyDetail.init(vacancy: viewModel.presentedVacancy)
                                     })
                             }
                         }
@@ -48,7 +47,7 @@ struct Vacancies: View {
                 .tag(VacanciesTab.companies)
             }
             VStack {
-                VacanciesTabBarView(activeTab: $activeTab)
+                VacanciesTabBarView(activeTab: $viewModel.activeTab)
                 Spacer()
             }
         

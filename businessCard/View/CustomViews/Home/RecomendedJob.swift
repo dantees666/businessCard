@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecommendedJob: View {
-    @State private var isPresented = false
+    @Bindable private var viewModel = RecomendedJobViewModel()
     
     var vacancies: [Vacancy]
     var body: some View {
@@ -35,10 +35,10 @@ struct RecommendedJob: View {
                     
                     ForEach(vacancies, id: \.self) { vacancy in
                         Button(action: {
-                            isPresented.toggle()
+                            viewModel.isPresented.toggle()
                         }) {
                             RecommendedJobCard(vacancy: vacancy)
-                                .fullScreenCover(isPresented: $isPresented, content: { VacancyDetail.init(vacancy: vacancy)})
+                                .fullScreenCover(isPresented: $viewModel.isPresented, content: { VacancyDetail.init(vacancy: vacancy)})
                         }
                         
                     }

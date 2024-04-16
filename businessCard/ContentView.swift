@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var activeTab: Tab = .home
+    @Bindable private var viewModel = ContentViewViewModel()
+    
     @Namespace private var animation
-    @State private var tabshapePosition: CGPoint = .zero
     
     // Hiding Tab Bar due to SwiftUI bug
     init() {
@@ -19,7 +19,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            TabView(selection: $activeTab) {
+            TabView(selection: $viewModel.activeTab) {
                 Home()
                     .tag(Tab.home)
                     //.toolbar(.hidden,for: .tabBar)
@@ -48,22 +48,22 @@ struct ContentView: View {
                     inactiveTint: inactiveTint,
                     tab: $0,
                     animation: animation,
-                    activeTab: $activeTab,
-                    position: $tabshapePosition
+                    activeTab: $viewModel.activeTab,
+                    position: $viewModel.tabshapePosition
                 )
             }
         }
         .padding(.horizontal, 15)
         .padding(.vertical, 10)
         .background(content: {
-            TabShape(midpoint: tabshapePosition.x)
+            TabShape(midpoint: viewModel.tabshapePosition.x)
                 .fill(.white)
                 .ignoresSafeArea()
                 .shadow(color: tint.opacity(0.2), radius: 5, x: 0, y: -5)
                 .blur(radius: 2)
                 .padding(.top, 25)
         })
-        .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7), value: activeTab)
+        .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7), value: viewModel.activeTab)
     }
 }
 

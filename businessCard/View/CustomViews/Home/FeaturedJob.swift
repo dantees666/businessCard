@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FeaturedJob: View {
-    @State private var isPresented = false
+    @Bindable var viewModel = FeaturedJobViewModel()
     
     var vacancies: [Vacancy]
     
@@ -36,11 +36,11 @@ struct FeaturedJob: View {
                     
                     ForEach(vacancies, id: \.self) { vacancy in
                         Button(action: {
-                            isPresented.toggle()
+                            viewModel.isPresented.toggle()
                         }){
                             FeaturedJobCard(vacancy: vacancy)
                         }
-                        .fullScreenCover(isPresented: $isPresented, content: {
+                        .fullScreenCover(isPresented: $viewModel.isPresented, content: {
                             VacancyDetail.init(vacancy: vacancy)
                         })
                     }

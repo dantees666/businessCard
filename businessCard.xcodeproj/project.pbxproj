@@ -16,6 +16,12 @@
 		AA3A2DFA2BB976C300351B39 /* VacancyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DF92BB976C300351B39 /* VacancyTab.swift */; };
 		AA3A2DFC2BC40C2A00351B39 /* Vacancies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */; };
 		AA3A2DFE2BC40D6B00351B39 /* VacanciesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */; };
+		AA877C772BCE7437007F653E /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA877C762BCE7437007F653E /* ContentViewViewModel.swift */; };
+		AA877C7A2BCE860C007F653E /* VacanciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA877C792BCE860C007F653E /* VacanciesViewModel.swift */; };
+		AA877C7D2BCE8CBE007F653E /* VacancyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA877C7C2BCE8CBE007F653E /* VacancyDetailViewModel.swift */; };
+		AACE6BE02BCE8DBD00066FAA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACE6BDF2BCE8DBD00066FAA /* SearchViewModel.swift */; };
+		AACE6BE22BCE8E5B00066FAA /* FeaturedJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACE6BE12BCE8E5B00066FAA /* FeaturedJobViewModel.swift */; };
+		AACE6BE42BCE8EC700066FAA /* RecomendedJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACE6BE32BCE8EC700066FAA /* RecomendedJobViewModel.swift */; };
 		AAD6EA382BC576D700B70B31 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6EA372BC576D700B70B31 /* Company.swift */; };
 		AAD6EA3A2BC9448200B70B31 /* VacancyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6EA392BC9448200B70B31 /* VacancyCard.swift */; };
 		AAF72C942BC94CBD00704D7A /* CompanyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF72C932BC94CBD00704D7A /* CompanyCard.swift */; };
@@ -59,6 +65,12 @@
 		AA3A2DF92BB976C300351B39 /* VacancyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyTab.swift; sourceTree = "<group>"; };
 		AA3A2DFB2BC40C2A00351B39 /* Vacancies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancies.swift; sourceTree = "<group>"; };
 		AA3A2DFD2BC40D6B00351B39 /* VacanciesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesTab.swift; sourceTree = "<group>"; };
+		AA877C762BCE7437007F653E /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		AA877C792BCE860C007F653E /* VacanciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesViewModel.swift; sourceTree = "<group>"; };
+		AA877C7C2BCE8CBE007F653E /* VacancyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyDetailViewModel.swift; sourceTree = "<group>"; };
+		AACE6BDF2BCE8DBD00066FAA /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AACE6BE12BCE8E5B00066FAA /* FeaturedJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedJobViewModel.swift; sourceTree = "<group>"; };
+		AACE6BE32BCE8EC700066FAA /* RecomendedJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedJobViewModel.swift; sourceTree = "<group>"; };
 		AAD6EA372BC576D700B70B31 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		AAD6EA392BC9448200B70B31 /* VacancyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyCard.swift; sourceTree = "<group>"; };
 		AAF72C932BC94CBD00704D7A /* CompanyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCard.swift; sourceTree = "<group>"; };
@@ -147,6 +159,43 @@
 			path = Auxiliary;
 			sourceTree = "<group>";
 		};
+		AA877C752BCE7418007F653E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA877C7B2BCE8C9C007F653E /* Auxiliary */,
+				AACE6BDE2BCE8D9C00066FAA /* Home */,
+				AA877C782BCE85F6007F653E /* Tabs */,
+				AA877C762BCE7437007F653E /* ContentViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA877C782BCE85F6007F653E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				AA877C792BCE860C007F653E /* VacanciesViewModel.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		AA877C7B2BCE8C9C007F653E /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				AA877C7C2BCE8CBE007F653E /* VacancyDetailViewModel.swift */,
+			);
+			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		AACE6BDE2BCE8D9C00066FAA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AACE6BDF2BCE8DBD00066FAA /* SearchViewModel.swift */,
+				AACE6BE12BCE8E5B00066FAA /* FeaturedJobViewModel.swift */,
+				AACE6BE32BCE8EC700066FAA /* RecomendedJobViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		AAFE02EA2BB4329900F447C7 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +220,7 @@
 				AAFE030E2BB57FF000F447C7 /* Extensions */,
 				AAFE03052BB453E200F447C7 /* Model */,
 				AAFE03042BB453CE00F447C7 /* View */,
+				AA877C752BCE7418007F653E /* ViewModel */,
 				AAFE02F62BB4329900F447C7 /* businessCardApp.swift */,
 				AAFE02F82BB4329900F447C7 /* ContentView.swift */,
 				AAFE02FA2BB4329C00F447C7 /* Assets.xcassets */,
@@ -330,7 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD6EA3A2BC9448200B70B31 /* VacancyCard.swift in Sources */,
+				AACE6BE22BCE8E5B00066FAA /* FeaturedJobViewModel.swift in Sources */,
 				AAF72C942BC94CBD00704D7A /* CompanyCard.swift in Sources */,
+				AA877C7D2BCE8CBE007F653E /* VacancyDetailViewModel.swift in Sources */,
+				AA877C772BCE7437007F653E /* ContentViewViewModel.swift in Sources */,
 				AAFE03072BB453F600F447C7 /* Tab.swift in Sources */,
 				AAFE02F92BB4329900F447C7 /* ContentView.swift in Sources */,
 				AAFE030D2BB57FD600F447C7 /* TabPosition.swift in Sources */,
@@ -345,9 +398,12 @@
 				AAD6EA382BC576D700B70B31 /* Company.swift in Sources */,
 				AA3A2DF02BB7DD0400351B39 /* FeaturedJob.swift in Sources */,
 				AA3A2DEE2BB6E3A100351B39 /* FeaturedJobCard.swift in Sources */,
+				AACE6BE02BCE8DBD00066FAA /* SearchViewModel.swift in Sources */,
+				AACE6BE42BCE8EC700066FAA /* RecomendedJobViewModel.swift in Sources */,
 				AA3A2DFE2BC40D6B00351B39 /* VacanciesTab.swift in Sources */,
 				AA3A2DF62BB7EAAC00351B39 /* RecomendedJob.swift in Sources */,
 				AAFE03102BB596F800F447C7 /* Welcome.swift in Sources */,
+				AA877C7A2BCE860C007F653E /* VacanciesViewModel.swift in Sources */,
 				AA3A2DF22BB7DF0C00351B39 /* Vacancy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +547,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +578,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

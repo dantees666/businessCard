@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Observation
 
 struct VacancyDetail: View {
-    @State private var activeTab: VacancyTab = .description
+    @Bindable private var viewModel = VacancyDetailViewModel()
+    
     @Environment(\.dismiss) var dismiss
     var vacancy: Vacancy
     
@@ -87,7 +89,7 @@ struct VacancyDetail: View {
                     .padding(.top, 30)
                 
                 ZStack(alignment: .top) {
-                    TabView(selection: $activeTab) {
+                    TabView(selection: $viewModel.activeTab) {
                         VStack {
                             Text(VacancyTab.description.rawValue)
                         }
@@ -110,7 +112,7 @@ struct VacancyDetail: View {
                     }
                     
                     VStack {
-                        VacancyTabBarView(activeTab: $activeTab)
+                        VacancyTabBarView(activeTab: $viewModel.activeTab)
                         
                         Spacer()
                         
